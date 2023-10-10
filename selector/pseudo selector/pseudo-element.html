@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo_element</title>
+    <style>
+       .para::before
+       {
+        content: "Sum dolor sit amet, consectetur adipisicing elit. Sint archit";
+        background-color: palegreen;
+        /* it means you can add some letter using content property in (before) it display starting letter */
+       }
+       .para::after
+       {
+        content: "parmar bhargav";
+        background-color: rgb(144, 144, 211);
+        color: aqua;
+        /* in after property used to you can add letter using content property but it display on last ending letter. */
+       }
+       .para::selection
+       {
+        background-color: blueviolet;
+        /* it display color if you select the letter */
+       }
+       .para::first-letter
+       {
+        color: red;
+        /* it is display color only first letter  */
+       }
+       .para::first-line
+       {
+        color: green;
+        /* it display color only first line. */
+       }
+    </style>
+</head>
+<body>
+    <p>pseudo_element selector is followed with double collon(::)</p>
+    <br>
+    <p>there have some property like before,after,selection,first-line,first-letter.</p>
+    <br>
+    <p>
+        A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s).
+    </p>
+    <br>
+    <p class="para">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint architecto esse dolore expedita sequi ipsa voluptate, culpa nesciunt, vero doloribus, voluptatem ad eum. Voluptatum cupiditate nobis eligendi cum laudantium atque.
+    </p>
+</body>
+</html>
