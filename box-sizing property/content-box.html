@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contentbox</title>
+    <style>
+        .contentbox
+        {
+            width: 400px;
+            height: 200px;
+            margin: 20px;
+            padding: 20px;
+            /* border: 1px solid black; */
+            box-sizing: content-box;
+            background-color: blueviolet;
+            text-align: center;
+        }
+        .box1
+        {
+            width: 400px;
+            height: 200px;
+            margin: 20px;
+            padding: 20px;
+            /* border: 1px solid black; */
+            box-sizing: content-box;
+            background-color: blueviolet;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="contentbox">
+        <p>
+            contentbox is not adjust with other content and it is change the height and width of the parent class.
+            prop => contentbox.
+        </p>
+        <br>
+        <p>The box-sizing property is specified as a single keyword chosen from the list of values below.</p>
+    </div>
+    <br>
+</body>
+</html>
