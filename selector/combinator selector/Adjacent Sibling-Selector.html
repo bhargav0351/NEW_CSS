@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Selector</title>
+    <style>
+        #div2 p+p
+        {
+            color: darkorchid;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        it is follow the next child and css will applied after first child and not follow grand child and not applied css on grand child.
+        it is denoted with (+) sign.
+        <br>
+        The adjacent sibling selector is used to select an element that is directly after another specific element.s
+        <br>
+        it is only applied near element.which element are you give.
+        <br>
+    </p>
+    <div id="div2">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nisi rerum. Nesciunt, necessitatibus. Placeat accusamus libero provident? Voluptate, animi molestiae.</p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vitae eaque consectetur dolorum maiores culpa ab dignissimos nemo placeat et quisquam, dolore quaerat facilis nam doloremque ad quam reprehenderit necessitatibus!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In, et repellat velit nostrum minus soluta? Asperiores doloremque eos corrupti id delectus, voluptates magni eum? Laboriosam ratione modi dolor quisquam tempore!
+    </p>
+    </div>
+</body>
+</html>

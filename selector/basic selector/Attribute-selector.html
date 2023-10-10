@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+
+    <style>
+        div[class*="mydiv"]
+        {
+        /* The CSS attribute selector matches elements based on the element having a given attribute explicitly set */
+        background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is heading tag</h1>
+    <div>
+        <div class="mydiv1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, assumenda.</div>
+        <div class="mydiv2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam </div>
+        <div class="mydiv3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, quidem.</div>
+        <div class="mydiv4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, neque?</div>
+    </div>
+</body>
+</html>

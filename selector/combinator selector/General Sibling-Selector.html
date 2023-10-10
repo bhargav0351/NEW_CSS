@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sibling Selector</title>
+    <style>
+        #div1 p ~ p
+        {
+            color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <p>The general sibling selector (~) selects all elements that are next siblings of a specified element.This means that the elements must have the same parent element, but they can be anywhere in the order of the children. 
+        <br>
+        The general sibling selector selects all elements that are next siblings of a specified element.
+        </p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, sint?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, sint?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, sint?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, sint?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, sint?</p>
+       
+    </div>
+</body>
+</html>
