@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fixed</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0 Auto;
+            background-color: palegreen;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+        .fixed{
+            background-color: teal;
+            color: khaki;
+            font-size: 50px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            /* z-index: 1; */
+        }
+        div[class*="box-"]{
+            height: 350px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed">Fixed</div>
+    <div class="box-1">Box-1</div>
+    <div class="box-2">Box-2</div>
+    <div class="box-3">Box-3</div>
+    <div class="box-4">Box-4</div>
+</body>
+</html>

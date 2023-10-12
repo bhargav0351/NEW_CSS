@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+            background-color: crimson;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+        div[class*="box-"]{
+            height: 350px;
+            width: 100%;
+        }
+        div[class*="box-ab"]{
+            height: 300px;
+            width: 300px;
+            color: aliceblue;
+            position: absolute;
+        }
+        .box-ab-1{
+            background-color: teal;
+            top: 50px;
+            left: 50px;
+        }
+        .box-ab-2{
+            background-color: rgb(128, 0, 96);
+            top: 50px;
+            right: 50px;
+        }
+        .box-ab-3{
+            background-color: rgb(0, 49, 128);
+            bottom: 140px;
+            right: 80px;
+        }
+        .box-ab-4{
+            background-color: rgb(250, 0, 0);
+            bottom: 140px;
+            left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1">Box-1</div>
+    <div class="box-2">Box-2
+        <div class="box-ab-1">Box-ab-1</div>
+        <div class="box-ab-2">Box-ab-2</div>
+        <div class="box-ab-3">Box-ab-3</div>
+        <div class="box-ab-4">Box-ab-4</div>
+    </div>
+    <div class="box-3">Box-3</div>
+    <div class="box-4">Box-4</div>
+</body>
+</html>
