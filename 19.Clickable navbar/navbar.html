@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box
+        {
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            background-color: teal;
+            border: 7px solid black;
+            position: relative;
+        }
+        input{
+            width: 50px;
+            height: 50px;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        i{
+            font-size: 50px;
+            margin: 10px;
+        }
+        input:checked + p{
+            display: block;
+        }
+        p{
+            background-color: crimson;
+            color: aliceblue;
+            font-size: 50px;
+            display: none;
+        }
+        input:checked + button
+        {
+            display: block;
+        }
+
+        button
+        {
+            background-color: rgb(33, 20, 220);
+            color: aliceblue;
+            font-size: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <i class="fa-solid fa-bars"></i>
+        <input type="checkbox">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, tenetur?</p>
+        <input type="checkbox">
+        <button>bhargav</button>
+    </div>
+</body>
+</html>

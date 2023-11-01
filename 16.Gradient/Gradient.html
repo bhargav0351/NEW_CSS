@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient In CSS</title>
+    <style>
+       
+        .linear-gradient{
+            height: 150px;
+            /* background: linear-gradient(red, green, yellow, blue); */
+            background: linear-gradient(30deg, red, green, yellow, blue);
+
+        }
+        .radial-gradient{
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            border-radius: 50%;
+            /* background: linear-gradient(red, green, yellow, blue); */
+            background: radial-gradient( red, green, yellow, blue);
+
+        }
+        .conic-gradient{
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            border-radius: 50%;
+            /* background: linear-gradient(red, green, yellow, blue); */
+            background: conic-gradient( red, green, yellow, blue);
+        }
+
+        .Gradient1{
+            height: 200px;
+            width: 100px;
+            background: linear-gradient(30deg, red, green, yellow, blue);
+            text-align: center;
+            font-size: 25px;
+            color: red;
+            padding: 0px 100px 100px;
+            border: 5px solid black;
+            border-radius: 50%;
+        }
+        p{
+            margin-top: 80px;
+            font-size: 25px;
+            color: red;
+            text-align: center;
+        }
+
+        .Gradient2{
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            border-radius: 50%;
+            background: radial-gradient( red, green, yellow, blue);
+            border: 5px solid black;
+        }
+        .Gradient3{
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            border-radius: 50%;
+            background: conic-gradient( red, green, yellow, blue);
+            border: 5px solid black;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="linear-gradient"></div>
+    <hr>
+    <div class="radial-gradient"></div>
+    <hr>
+    <div class="conic-gradient"></div>
+    <!-- https://cssgradient.io/ -->
+    <hr>
+    <div class="Gradient1">
+        <p>My name is Parmar Bhargav C.</p>
+    </div>
+    <hr>
+    <div class="Gradient2">
+        <p>My name is Parmar Bhargav C.</p>
+    </div>
+    <hr>
+    <div class="Gradient3">
+        <p>My name is Parmar Bhargav C.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor</title>
+    <style>
+        .box{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            border: 10px solid blueviolet;
+            background-color: rgb(247, 0, 247);
+        }
+        button
+        {
+            padding: 10px;
+            margin: 18px 20px;
+            font-size: 20px;
+            border: 2px solid black;
+        }
+        #b1
+        {
+            background-color: aqua;
+            color: red;
+            cursor: pointer;
+        }
+        #b2
+        {
+            background-color: blueviolet;
+            color: rgb(0, 255, 0);
+            cursor: alias;
+        }
+        #b3
+        {
+            background-color: aqua;
+            color: red;
+            cursor: col-resize;
+        }
+        #b4
+        {
+            background-color: blueviolet;
+            color: rgb(0, 255, 0);
+            cursor: move;
+        }
+        #b5
+        {
+            background-color: aqua;
+            color: red;
+            cursor: cell;
+        }
+        #b6
+        {
+            background-color: blueviolet;
+            color: rgb(0, 255, 0);
+            cursor: n-resize;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <button id="b1">bhargav</button>
+        <button id="b2">mehul</button>
+        <button id="b3">keval</button>
+        <button id="b4">jay</button>
+        <button id="b5">kuldip</button>
+        <button id="b6">siddhrth</button>
+    </div>
+</body>
+</html>

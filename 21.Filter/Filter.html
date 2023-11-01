@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter In CSS</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        border: 5px solid black;
+        background: url(../21.Filter/image/repact.jpg) no-repeat center center/cover;
+        filter: blur(1px);
+        filter: brightness(2);
+        filter: contrast(300%);
+        filter: drop-shadow(16px 16px 20px blue);
+        filter: grayscale(50%);
+        filter: hue-rotate(90deg);
+        filter: invert(75%);
+        filter: opacity(25%);
+        filter: saturate(30%);
+        filter: sepia(60%);
+      }
+      .box2
+      {
+        margin: 10px 0px;
+        padding: 10px;
+      }
+      img{
+        height: 250px;
+        width: 300px;
+        margin: 10px 100px;
+        border: 5px solid red;
+        margin: 60px;
+    
+      }
+      #img1
+      {
+        filter: blur(2px);
+      }
+      #img2
+      {
+        filter: brightness(1.2);
+      }
+      #img3
+      {
+        filter: contrast(250%);
+      }
+      #img4
+      {
+        filter: drop-shadow(10px  10px 20px red);
+      }
+      #img5
+      {
+        filter: grayscale(70%);
+      }
+      #img6
+      {
+        filter: hue-rotate(40deg);
+      }
+      #img7
+      {
+        filter: invert(15%);
+      }
+      #img8
+      {
+        filter: opacity(60%);
+      }
+      #img9
+      {
+        filter: saturate(10%);
+      }
+      #img10
+      {
+        filter: sepia(10%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box2">
+        <img src="../21.Filter/image/attachment.jpg" alt="" id="img1">
+        <img src="../21.Filter/image/cilp.jpg" alt="" id="img2">
+        <img src="../21.Filter/image/delievery_boy.webp" alt="" id="img3">
+        <img src="../21.Filter/image/image.jpg" alt="" id="img4">
+        <img src="../21.Filter/image/multiple.jpg" alt="" id="img5">
+        <img src="../21.Filter/image/origin.jpg" alt="" id="img6">
+        <img src="../21.Filter/image/position.jpg" alt="" id="img7">
+        <img src="../21.Filter/image/shorthand.jpg" alt="" id="img8">
+        <img src="../21.Filter/image/size.jpg" alt="" id="img9">
+        <img src="../21.Filter/image/uberbg.webp" alt="" id="img10">
+    </div>
+  </body>
+</html>
