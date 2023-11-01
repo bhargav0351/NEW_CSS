@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            display: flex;
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            border: 3px solid rgb(255, 55, 212);
+            animation-name: bhargav;
+            animation-iteration-count: infinite;
+            animation-duration: 20s;
+            animation-direction: alternate;
+        }
+        @keyframes bhargav 
+        {
+            0%
+            {
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+            25%
+            {
+                margin-top: 10px;
+                margin-left: 1100px;
+            }
+            50%
+            {
+                margin-top: 380px;
+                margin-left: 1100px;
+            }
+            75%
+            {
+                margin-top: 380px;
+                margin-left: 10px;
+            }
+            100%
+            {
+                margin-bottom: 380px;
+                margin-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <img src="../../image/multiple.jpg" >
+        <img src="../../image/origin.jpg" >
+    </div>
+</body>
+</html>

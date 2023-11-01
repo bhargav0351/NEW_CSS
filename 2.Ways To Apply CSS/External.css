@@ -1,0 +1,34 @@
+*
+{
+    box-sizing: border-box;
+}
+.bhargav
+{
+    box-sizing: border-box;
+    border: 5px solid purple;
+    padding: 0px 20px 20px;
+}
+p{
+    color: rebeccapurple;
+    font-size: 25px;
+    box-sizing: border-box;
+    border: 3px solid gray;
+    background-color: aqua;
+    padding: 5px;
+}
+img
+{
+    width: 250px;
+    height: 200px;
+    border: 2px solid red;
+    margin-top: -12px;
+}
+.mehul
+{
+    box-sizing: border-box;
+    border: 4px solid green;
+    margin-top: 10px;
+    font-size: 20px;
+    color: gold;
+    background-color: teal;
+}
