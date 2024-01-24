@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY13</title>
+    <style>
+        .wrapper
+        {
+            margin: 100px auto;
+            width: 25%;
+            /* padding: 100px; */
+            position: relative;
+            /* border: 2px solid black; */
+
+        }
+        #ans
+        {
+            position: absolute;
+            font-size: 25px;
+            top: 40px;
+            right: 50px;
+            text-align: right;
+        }
+        #input1
+        {
+            font-size: 25px;
+            padding: 5px 20px 35px 20px;
+            text-align: right;
+            border: 3px solid black;
+        }
+        .wrap2
+        {
+            display: flex;
+            /* flex-direction: column; */
+            margin: 0 auto;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <input type="text" id="input1" placeholder="0">
+        <span id="ans">
+            <!-- bhargav -->
+        </span>
+    </div>
+    
+    <div class="wrap2">
+    <button  onclick="number(this)" >9</button>
+    <button  onclick="number(this)" >8</button>
+    <button  onclick="number(this)" >7</button>
+    <button  onclick="number(this)" >6</button>
+    <button  onclick="number(this)" >5</button>
+    <button  onclick="number(this)" >4</button>
+    <button  onclick="number(this)" >3</button>
+    <button  onclick="number(this)" >2</button>
+    <button  onclick="number(this)" >1</button>
+    <button  onclick="number(this)" >0</button>
+    <button  onclick="number(this)" >.</button>
+    <!-- <button id="one" onclick="number1">9</button> -->
+    
+    <button onclick="function_delete()" id="delete" >Del</button>
+    <button onclick="function_(this)" >+</button>
+    <button onclick="function_(this)" >-</button>
+    <button onclick="function_(this)" >*</button>
+    <button onclick="function_(this)" >/</button>
+
+    <button onclick="function_total()">=</button>
+    </div>
+
+
+    <script>
+
+        let input1=document.getElementById('input1');
+
+        function number(e)
+        {
+            // console.log(e.value);
+            input1.value += e.innerText;//input1.value=input1.value+e.innertext;
+        }
+        function function_(d)
+        {
+            input1.value += d.innerText;
+        }
+
+        function function_total()
+        {
+            document.getElementById('ans').innerText=eval(input1.value);
+            // input1.value=eval(input1.value);
+        }
+
+        function function_delete()
+        {
+            // input1.value=d.innerText="";
+            input1.value=input1.value="";
+        }
+
+    </script>
+
+</body>
+</html>

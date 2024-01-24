@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        header
+        {
+            display: flex;
+            background-color: teal;
+            justify-content: space-between;
+            position: relative;
+        }
+        .logo
+        {
+            padding: 10px;
+        }
+        ul
+        {
+            display: flex;
+        }
+        li
+        {
+            list-style-type: none;
+            color: white;
+            font-size: 25px;
+            padding: 20px 30px;
+        }
+        #check
+        {
+            display: none;
+            position: absolute;
+            margin-right: 20px;
+            top: 30px;
+            right: 20px;
+        }
+
+        @media (max-width: 576px) 
+        {
+            ul
+            {
+                display: none;
+                position: absolute;
+                border: 2px solid red;
+                background-color: aqua;
+                color: black;
+                top: 70px;
+                right: 0px;
+                width: 30%;
+                text-align: center;
+                /* duration timing-function delay iteration-count direction fill-mode; */
+            }
+            #check
+            {
+                display: block;
+            }
+            input:checked ~ ul
+            {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="bhargav">
+        <input type="checkbox" id="check">
+        <div class="logo">
+            <img src="../PROJECT/Sushi-PSD/image/logo.png" alt="">
+        </div>
+        <ul>
+            <li>About</li>
+            <li>Name</li>
+            <li>Data</li>
+            <li>Acount</li>
+            <li>Details</li>
+        </ul>
+    </header>
+</body>
+</html>
