@@ -1,38 +1,32 @@
 table,td
-        {
-            border: 1px solid black;
-        }
-        table
-        {
-            border-collapse: collapse;
-            /* border collapse ues for table border inculde  */
-            width: 900px;
-            text-align: center;
-        }
-        td
-        {
-            padding: 20px;
-        }
-        tr:nth-child(odd)
-        {
-            /* tr:nth-child(odd) is aplie for table odd number, clor, fonr sizing, etc */
-            background-color: teal;
-            color: aliceblue;
-        }
-        tr:nth-child(even)
-        {
-            /* tr:nth-child(even) is aplie for table even number, clor, fonr sizing, etc */
-            background-color: greenyellow;
-            color: aliceblue;
-        }
-        .responsive
-        {
-            width: 700px;
-            height: 600px;
-            margin: 0 auto;
-            border: 10px solid black;
-            /* overflow: hidden;   it is hide the data */
-            /* overflow: scroll; it is like scrollbar */
-            overflow: scroll;
-            
-        }
+{
+    border: 1px solid black;
+}
+table
+{
+    border-collapse: collapse;
+    width: 900px;
+    text-align: center;
+}
+td
+{
+    padding: 20px;
+}
+tr:nth-child(odd)
+{
+    background-color: teal;
+    color: aliceblue;
+}
+    tr:nth-child(even)
+{
+    background-color: greenyellow;
+    color: aliceblue;
+}
+.responsive
+{
+    width: 700px;
+    height: 600px;
+    margin: 0 auto;
+    border: 10px solid black;
+    overflow: scroll;   
+}

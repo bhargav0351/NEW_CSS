@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arow shape</title>
+    <title>Document</title>
     <style>
         *{
             margin: 0 auto;
@@ -13,8 +14,20 @@
         .main
         {
             display: flex;
-            justify-content: center;
+            gap: 0;
+            /* justify-content: center; */
             position: relative;
+        }
+        #shape
+        {
+            /* trikon banane ke liye use hota he */
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-color:rgb(104, 243, 116);
+            position: relative;
+            top: 178px;
+            left: 613px;
         }
         #shape1
         {
@@ -22,20 +35,24 @@
             width: 0;
             height: 0;
             border: 50px solid transparent;
-            border-left-color:rgb(104, 243, 116) ;
+            border-left-color:rgb(104, 243, 116);
+            border-right-color:rgb(243, 176, 104);
+            border-top-color:rgb(118, 148, 237);
+            border-bottom-color:rgb(222, 108, 233);
             position: relative;
-            top: -50px;
-            left: 30px;
+            top: 150px;
+            left: 0px;
         }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="shape">
 
-        .part
-        {
-            margin-top: 20px;
-            width: 0;
-            height: 0;
-            border: 30px solid black;
-            border-bottom-color:gold;
-            border-left-color: aqua;
-            border-right-color: rgb(250, 119, 12);
-            border-top-color: rgb(236, 137, 195);
-        }
+        </div>
+        <div id="shape1">
+
+        </div>
+    </div>
+</body>
+</html>
